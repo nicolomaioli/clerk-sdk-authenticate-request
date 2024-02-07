@@ -1,0 +1,30 @@
+{
+  "name": "clerk-sdk-authenticate-request",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "pnpm with-env tsx watch --clear-screen=false ./src/index.ts",
+    "build": "esbuild ./index.ts --platform=node --bundle --minify --outdir=./dist",
+    "format:write": "prettier --write \"**/*.{js,ts,md,json}\" --ignore-path='.gitignore'",
+    "format:check": "prettier --check \"**/*.{js,ts,md,json}\" --ignore-path='.gitignore'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^8.56.2",
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "dotenv-cli": "^7.3.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.13.8"
+  }
+}
